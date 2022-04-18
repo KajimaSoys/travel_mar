@@ -31,15 +31,18 @@ $(document).ready(function(jQuery) {
 
         function discount_calc(){
             if (count === 1){
-                id_exempt.value = 3;
-                discount = 3;
+                id_exempt.value = 0;
+                discount = 0;
             } else if (count === 0){
                 id_exempt.value = 0;
                 discount = 0;
             } else if (count > 5){
                 id_exempt.value = 10;
                 discount = 10;
-            } else if (count > 1){
+            } else if (count === 2){
+                id_exempt.value = 3;
+                discount = 3;
+            } else if (count > 2){
                 id_exempt.value = 5;
                 discount = 5;
             }
